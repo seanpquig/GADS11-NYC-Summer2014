@@ -28,12 +28,12 @@ From the github help page:
 > The Fork & Pull Model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer.
 
 ```sh
-cd ~/; git clone git@github.com:<your github username>/GADS9-NYC-Spring2014.git
+cd ~/; git clone git@github.com:<your github username>/GADS11-NYC-Summer2014.git
 ```
 
 For example:
 ```sh
-cd ~/; git clone git@github.com:datadave/GADS9-NYC-Spring2014.git
+cd ~/; git clone git@github.com:datadave/GADS11-NYC-Summer2014.git
 ```
 
 ## `python`
@@ -62,10 +62,10 @@ pip install ggplot
 
 ## Lab Submissions
 
-in `GADS9-NYC-Spring2014/lab_submissions/lab01`, make a directory with your first initial/full last name.
+in `GADS11-NYC-Summer2014/lab_submissions/lab01`, make a directory with your first initial/full last name.
 
 ```sh
-DIR='flastname'; cd ~/GADS9-NYC-Spring2014/lab_submissions/lab01; mkdir $DIR; open $DIR
+DIR='flastname'; cd ~/GADS11-NYC-Summer2014/lab_submissions/lab01; mkdir $DIR; open $DIR
 ```
 
 With a text or markdown editor, create and save a markdown file with the following content:
