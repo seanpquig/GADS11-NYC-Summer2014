@@ -1,9 +1,7 @@
-Ed Podojil, Data Scentist <a href="https://www.twitter.com/homejoy">@Homejoy</a>
+Alfred Lee, Data Scentist [Paperless Post](http://www.paperlesspost.com/)
 
-Twitter: <a href="https://www.twitter.com/podopie">@podopie
+Calculus doesn't scare me, but statistics takes more thought. I started programming as a boy, but didn't take it seriously until recently.
 
-Website: <a href="http://www.heypodo.com"> linky</a>
+Twitter: [@alphrabet](https://twitter.com/Alphrabet)
 
-I added a bunch of great reading and viewing on the lab page!
-<a href="https://github.com/datadave/GADS9-NYC-Spring2014/wiki/Lab-01:Computer-Setup#next-steps">Lab 1 Reading</a>
-
+A fun convergence of art, natural language processing, and python by a friend of mine: http://jennazeigen.com/project-synesthesia.html
