@@ -182,10 +182,6 @@ class Car():
 		else:
 			print 'The car was not running!'
 
-	if wheels < 0 :
-		print "A car cannot have less than 0 wheels, so we've made this car have 0 for you"
-		wheels = 0	
-
 ford = Car()
 nissan = Car(model = 'Nissan')
 ford.running
