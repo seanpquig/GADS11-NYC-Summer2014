@@ -110,7 +110,7 @@ git push origin my_name_class_1        # push (upload) the branch to origin
 
 In the last command, `origin` refers to a remote. That is, an alias for a link to a repository. You can view a list of remotes and where they point using `git remote -v`.
 
-Add a pull request. This is the actual submission of your work. You can do this on github by finding your branch and clicking "Create pull request." Developers, feel free to use some command line tool for this if you prefer it.
+Add a pull request from your repo online. You'll see a big green button appear that lets you do this. This is the actual submission of your work. You can do this on github by finding your branch and clicking "Create pull request." Developers, feel free to use some command line tool for this if you prefer it.
 
 Again, a link to github documentation on the <a href="https://help.github.com/articles/using-pull-requests#fork--pull">Fork and Pull git model</a>.
 
@@ -124,6 +124,12 @@ Next, you can fetch and merge in the single command:
 
 ```sh
 git pull root master
+```
+
+Now the latest changes from the main repo are on your local machine. If you want to be able to see them on github, you've have to push up those changes.
+
+```sh
+git push origin master
 ```
 
 Once your pull request has been accepted, you can run this command and the lastest version including your changes will now be in your master. At this point, you can get rid of your local branch if you want.
