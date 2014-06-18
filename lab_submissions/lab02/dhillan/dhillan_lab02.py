@@ -143,8 +143,8 @@ class Car():
         #if wheels has been overridden and less than 0
         if wheels < 0:
             # set to 0
-            self.wheels = 0
-            print 'Can not have negative wheels - set to 0'
+            self.wheels = 4
+            print 'Can not have negative wheels - set to 4'
         else:
             # else set to user defined wheels
             self.wheels = wheels
