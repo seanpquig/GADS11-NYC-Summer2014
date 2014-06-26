@@ -58,9 +58,9 @@ def top_words(df):
     full_list = [x if x not in std_word_set else None for x in full_list]                   
     
     # remove non activity entries
-    location_words = ['manhattan','midtown',"nyc","houston","san","antonio","pheonix","city"]
+    location_words = ['manhattan','midtown',"nyc","houston","san","antonio","pheonix","city","chicago","phoenix"]
     needy_words = ["looking","seeking","want","wanted","needed","need","help"]
-    others = ['sick','action','opening',"starts","players","player","free","partner","team","group","july","get"]
+    others = ['sick','action',"new",'opening',"starts","players","player","free","partner","team","group","july","get","th"]
     non_actitivity_words = location_words + needy_words + others
     full_list = [x if x not in non_actitivity_words else None for x in full_list]                                                                            
                                                                                                                                                                                   
@@ -95,13 +95,13 @@ def top_words(df):
 if __name__ == "__main__":
 
     # top 10 us cities by population
-    cities = ['newyork'] #,'losangeles','chicago','houston','philadelphia','phoenix','sanantonio'] #,'sandiego','dallas','sanjose']
+    cities = ['newyork','losangeles','chicago','houston','philadelphia','phoenix','sanantonio'] #,'sandiego','dallas','sanjose']
    
     ################################################ 
     # Activity Partners top 20 across mutiple cities
     all_data = pandas.DataFrame()
     for current_city in cities:
-        df = connect_to_craigslist.search_craigslist('',category='man seeking women', city=current_city)
+        df = connect_to_craigslist.search_craigslist('',category='activity partners', city=current_city)
         # top 20 from each city
         topwords_df = top_words(df)
         topwords_df['city'] = current_city 
@@ -112,6 +112,6 @@ if __name__ == "__main__":
     # reshape data
     df_pivot = all_data.pivot(index='idx', columns='city')
     # export
-    #df_pivot.to_csv('activities.csv')
-    df_pivot.to_csv('personal.csv')
+    df_pivot.to_csv('activities2.csv')
+    #df_pivot.to_csv('personal.csv')
     
