@@ -2,12 +2,12 @@
 _We'll be discussing the linear regression algorithm and learn about scoring regression models_
 
 #### Class Materials
-* [Lecture Material](http://nbviewer.ipython.org/github/patwmcnamara/GADS11-NYC-Spring2014-Lectures/blob/master/lessons/lesson08_linear_regression/lec08.pdf)
-* [Lab Material](http://nbviewer.ipython.org/github/patwmcnamara/GADS11-NYC-Spring2014-Lectures/blob/master/lessons/lesson08_linear_regression/Lab08.ipynb)
-* [Extra Notes](http://nbviewer.ipython.org/github/patwmcnamara/GADS11-NYC-Spring2014-Lectures/blob/master/lessons/lesson08_linear_regression/Lab08_Notes.ipynb)
+* [Lecture Material](http://nbviewer.ipython.org/github/patwmcnamara/GADS11-NYC-Summer2014-Lectures/blob/master/lessons/lesson08_linear_regression/lec08.pdf)
+* [Lab Material](http://nbviewer.ipython.org/github/patwmcnamara/GADS11-NYC-Summer2014-Lectures/blob/master/lessons/lesson08_linear_regression/Lab08.ipynb)
+* [Extra Notes](http://nbviewer.ipython.org/github/patwmcnamara/GADS11-NYC-Summer2014-Lectures/blob/master/lessons/lesson08_linear_regression/Lab08_Notes.ipynb)
 
 #### Assignments Due
-Please fill in the notebook, put it in a `lab_submissions/lab07/flastname` folder, and submit a pull request
+Please fill in the notebook, put it in a `lab_submissions/lab08/flastname` folder, and submit a pull request
 
 ### More Reading
 | Resource | About 
