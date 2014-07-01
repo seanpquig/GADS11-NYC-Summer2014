@@ -57,10 +57,13 @@ def get_track_page(word,page_num):
 
 words = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 
+# words = ['january']
+
+summary_data = {}
 
 for word in words:
 	page_num = 1
-	df = pd.DataFrame(columns=['name','popularity','length'])
+	df = pd.DataFrame(columns=['track_name','popularity','length'])
 
 	while True:
 		response_string = get_track_page(word,page_num)
@@ -71,8 +74,8 @@ for word in words:
 		soup = BeautifulSoup(response_string)
 		tracks = soup.find_all('track')
 
-		df_temp = pd.DataFrame(columns=['name','popularity','length'])
-		df_temp['name'] = [track.find('name') for track in tracks]
+		df_temp = pd.DataFrame(columns=['track_name','popularity','length'])
+		df_temp['track_name'] = [track.find('name') for track in tracks]
 		df_temp['popularity'] = [track.find('popularity') for track in tracks]
 		df_temp['length'] = [track.find('length') for track in tracks]
 
@@ -82,12 +85,16 @@ for word in words:
 		page_num += 1
 		# print page_num
 
-	df['name'] = [name.string for name in df['name']]
-	df['popularity'] = [float(name.string) for name in df['popularity']]
-	df['length'] = [float(name.string) for name in df['length']]
+	df['track_name'] = [unicode(dat.string) for dat in df['track_name']]
+	df['popularity'] = [float(dat.string) for dat in df['popularity']]
+	df['length'] = [float(dat.string) for dat in df['length']]
+
+	# print map(type, df.iterrows().next()[1])
+	# print df.columns
 
 	print 'popularity and length of songs about ' + word
-	print df[['popularity','length']].describe()
+	summary_data[word] = df[['popularity','length']].describe()
+	print summary_data[word]
 
 	df.to_pickle(word)
 
@@ -100,11 +107,11 @@ for word in words:
 	df.length[zero_len] = np.nan
 
 	print 'popularity and length of songs about ' + word + ' after removing zeros'
-	print df[['popularity','length']].describe()
+	summary_data[word + 'nonzero'] = df[['popularity','length']].describe()
+	print summary_data[word + 'nonzero']
 
-
-
-
+	# df_read = pickle.load( open( word, "rb" ) )
+	# print df_read
 
 
 #df to csv
